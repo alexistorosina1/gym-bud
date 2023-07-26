@@ -17,10 +17,11 @@ function Login(){
 
     return(
         <>
-            <div>
+            <div className="login-card">
+                <h2>Sign in to your account</h2>
                 <form>
                     <label>
-                        Email:
+                        Email address
                         <input
                         type="email"
                         value={email}
@@ -29,7 +30,7 @@ function Login(){
                     </label>
                     <br />
                     <label>
-                        Password:
+                        Password
                         <input
                         type="password"
                         value={password}
@@ -37,6 +38,11 @@ function Login(){
                         />
                     </label>
                 </form>
+                <button>Sign in</button>
+                <p>Not a member?
+                    <a> Sign up</a>
+                </p>
+
             </div>
         </>
     )
