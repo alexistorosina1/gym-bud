@@ -1,4 +1,5 @@
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
+import Login from "./components/Login";
 
 
 function App() {
@@ -7,11 +8,9 @@ function App() {
   return (
     <>
       <h1>Hello</h1>
-      {/* <Router>
-        <Switch>
-          <Route exact path ="/"/> 
-        </Switch>
-      </Router> */}
+      <Routes>
+          <Route path="/" element={<Login />}/>
+      </Routes>
     </>
   )
 }
