@@ -7,8 +7,8 @@ import {
     setLocation,
 } from "../slices/signupSlice"
 
-function Signup(){
-    const { formData } = useSelector((state) => state.signup)
+function Signup({ handleFormToggle }){
+    const formData  = useSelector((state) => state.signup)
     const dispatch = useDispatch();
 
     const handleChange = (e) => {
@@ -33,7 +33,7 @@ function Signup(){
                 break;
         }
     }
-    
+    console.log(formData, "jello")
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -75,6 +75,9 @@ function Signup(){
                     placeholder="Location"
                     />
                 </form>
+                <p>Already have an account?
+                    <a href="#" onClick={handleFormToggle}>Login</a>    
+                </p>
             </div>
         </>
     )
