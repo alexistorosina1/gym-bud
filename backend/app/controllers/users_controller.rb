@@ -1,5 +1,4 @@
 class UsersController < ApplicationController\
-    has_secure_password
 
     def create
         user = User.create!(user_params)
