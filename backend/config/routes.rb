@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   resources :workouts
   resources :comments
   resources :posts
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: "users/registrations/registrations", 
+    sessions: "users/sessions",
+    passwords: "users/passwords"
+  }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
