@@ -182,6 +182,7 @@ DEPENDENCIES
   bootsnap
   byebug
   debug
+  devise
   devise_token_auth
   puma (~> 5.0)
   rack-cors
