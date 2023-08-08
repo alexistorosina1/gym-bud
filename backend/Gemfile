@@ -13,7 +13,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 
 #devise for authentication
-gem "devise"
+gem "devise_token_auth"
 
 # rack-cors
 gem "rack-cors", require: "rack/cors"
